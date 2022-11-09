@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(/src/data/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 60rem;
+}
+.hero {
+  margin: auto;
+  width: 60rem;
+}
+.hero img {
+  width: 60rem;
+}
+
+.content {
+  position: absolute;
+  /* opacity: 100%; */
+  min-width: 60rem;
+  max-width: 60rem;
+  height: 39rem;
+}
+.collections-highlight {
+  margin-top: 10.8em;
+  margin-left: 4.9em;
+  opacity: 0;
+  width: min-content;
+}
+.collections-highlight img {
+  width: 12rem;
+}
+.collections-highlight:hover {
+  opacity: 100%;
+}
+.team-highlight {
+  margin-top: -3.3em;
+  margin-left: 19.1em;
+  opacity: 0;
+  width: min-content;
+}
+.team-highlight img {
+  width: 4.7rem;
+}
+.team-highlight:hover {
+  opacity: 100%;
+}
+.tees-highlight {
+  margin-top: -2.5em;
+  margin-left: 25.22em;
+  opacity: 0;
+  width: min-content;
+}
+.tees-highlight img {
+  width: 8.5rem;
+}
+.tees-highlight:hover {
+  opacity: 100%;
+}
+.rare-highlight {
+  width: min-content;
+  margin-left: 32.1em;
+  margin-top: 8.2em;
+  opacity: 0;
+}
+.rare-highlight img {
+  width: 5rem;
+}
+.rare-highlight:hover {
+  opacity: 100%;
+}
+.ultra-highlight {
+  width: min-content;
+  opacity: 0;
+  margin-left: 23.1em;
+  margin-top: -2em;
+}
+.ultra-highlight img {
+  width: 7rem;
+}
+.ultra-highlight:hover {
+  opacity: 100%;
+}
+.nftees-highlight {
+  width: min-content;
+  opacity: 0;
+  margin-left: 36.5em;
+  margin-top: -17.8em;
+}
+.nftees-highlight img {
+  width: 2.6rem;
+}
+.nftees-highlight:hover {
+  opacity: 100%;
+}
+.partners-highlight {
+  width: min-content;
+  opacity: 0;
+  margin-left: 41.1em;
+  margin-top: -2.7em;
+}
+.partners-highlight img {
+  width: 13.5rem;
+}
+.partners-highlight:hover {
+  opacity: 100%;
+}
+.connect-highlight {
+  width: min-content;
+  margin-left: 22.1em;
+  margin-top: -15.4em;
+  opacity: 0;
+}
+.connect-highlight img {
+  width: 16rem;
+}
+.connect-highlight:hover {
+  opacity: 100%;
+}
+.medium-highlight {
+  width: min-content;
+  margin-left: 50.55em;
+  margin-top: 0.9em;
+  opacity: 0;
+}
+.medium-highlight img {
+  width: 1.5rem;
+}
+.medium-highlight:hover {
+  opacity: 100%;
+}
+.twitter-highlight {
+  width: min-content;
+  margin-left: 52.2em;
+  margin-top: -2em;
+  opacity: 0;
+}
+.twitter-highlight img {
+  width: 1.5rem;
+}
+.twitter-highlight:hover {
+  opacity: 100%;
+}
+.twitch-highlight {
+  width: min-content;
+  margin-left: 54.4em;
+  margin-top: -3em;
+  opacity: 0;
+}
+.twitch-highlight img {
+  width: 1.8rem;
+}
+.twitch-highlight:hover {
+  opacity: 100%;
+}
+.t-highlight {
+  width: min-content;
+  margin-top: -3.8em;
+  margin-left: 3.9em;
+  opacity: 0;
+}
+.t-highlight img {
+  width: 1.9rem;
+}
+.t-highlight:hover {
+  opacity: 100%;
+}
