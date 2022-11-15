@@ -174,3 +174,12 @@ body {
 .t-highlight:hover {
   opacity: 100%;
 }
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+button:focus {
+  border: none;
+}

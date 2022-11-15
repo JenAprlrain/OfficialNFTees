@@ -11,8 +11,44 @@ import medium from "./data/medium.png";
 import tLogo from "./data/t-logo.png";
 import twitter from "./data/twitter.png";
 import twitch from "./data/twitch.png";
+import {useState} from "react";
+import { ethers } from "ethers"
 
 function App() {
+  const [walletAddress, setWalletAddress] = useState("");
+
+  // Requests access to the user's META MASK WALLET
+  // https://metamask.io
+  async function requestAccount() {
+    console.log('Requesting account...');
+
+    // ❌ Check if Meta Mask Extension exists 
+    if(window.ethereum) {
+      console.log('detected');
+
+      try {
+        const accounts = await window.ethereum.request({
+          method: "eth_requestAccounts",
+        });
+        setWalletAddress(accounts[0]);
+      } catch (error) {
+        console.log('Error connecting...');
+      }
+
+    } else {
+      alert('Meta Mask not detected');
+    }
+  }
+
+  // Create a provider to interact with a smart contract
+  async function connectWallet() {
+    if(typeof window.ethereum !== 'undefined') {
+      await requestAccount();
+
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+    }
+  }
+
   return (
     <div className="container">
       <div className="hero">
@@ -25,9 +61,7 @@ function App() {
           </a>
         </div>
         <div className="team-highlight">
-          <a href="#">
             <img src={team} alt="" />
-          </a>
         </div>
         <div className="tees-highlight">
           <a href="#">
@@ -55,9 +89,7 @@ function App() {
           </a>
         </div>
         <div className="connect-highlight">
-          <a href="#">
-            <img src={connect} alt="" />
-          </a>
+        <button onClick={requestAccount}><img src={connect} alt=""/></button>
         </div>
         <div className="medium-highlight">
           <a href="#">
